@@ -45,8 +45,6 @@ public class Calculator
             default:
                 System.out.println("Invalid choice!");
         }
-        
-        scan.close();
     }
     
     public static void Addition(int num1, int num2)
@@ -66,13 +64,6 @@ public class Calculator
     
     public static void Division(int num1, int num2)
     {
-        if (num2 != 0)
-        {
-            System.out.println("Result: " + ((double)num1 / num2));
-        }
-        else
-        {
-            System.out.println("Error: Cannot divide by zero!");
-        }
+        System.out.println("Result: " + ((double)num1 / num2));
     }
 }
